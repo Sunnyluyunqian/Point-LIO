@@ -1,13 +1,9 @@
 {
-  "name": "point-lio (Ubuntu 20.04)",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-20.04",
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "ms-python.python",
-        "ms-vscode.cpptools"
-      ]
-    }
+  "name": "Point-LIO with Ubuntu 20.04",
+  "image": "ubuntu:20.04",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
   },
-  "postCreateCommand": "echo 'Dev container ready.'"
+  "postCreateCommand": "sudo apt-get update && sudo apt-get upgrade -y",
+  "remoteUser": "vscode"
 }
