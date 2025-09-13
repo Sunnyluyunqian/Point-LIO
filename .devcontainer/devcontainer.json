@@ -1,0 +1,13 @@
+{
+  "name": "point-lio (Ubuntu 20.04)",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-20.04",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-vscode.cpptools"
+      ]
+    }
+  },
+  "postCreateCommand": "echo 'Dev container ready.'"
+}
